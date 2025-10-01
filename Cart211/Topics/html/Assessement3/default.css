@@ -1,7 +1,9 @@
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    padding: 0;
+    font-family: "Xanh Mono", monospace ;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    font-style: normal;
     margin: 0;
     background-color: rgb(255, 252, 241);
     
@@ -15,21 +17,21 @@ body{
 }
 header h1 {
     text-align: right;
-    font-size: 30px;
+    font-size: 33px;
     margin-bottom: 5px;
 }
 header h2{
     margin-top: 0px;
     margin-bottom:30px;
     text-align: right;
-    font-size: 20px;
+    font-size: 25px;
     color:rgb(3, 115, 160);
 }
 header h3{
     margin-top: 0px;
     margin-bottom:10px;
     text-align: left;
-    font-size: 20px;
+    font-size: 23px;
     color:rgb(3, 115, 160);
 }
 header img{
@@ -60,9 +62,12 @@ nav a:hover {
 }
 
 article p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Jacquard 12", system-ui;
+    font-weight:400;
+    font-style: normal;
+    font-size: 21px;
     background-color:aliceblue;
-   
+    color: rgb(40, 57, 72);
 }
 
 section{

@@ -5,13 +5,13 @@ body{
     font-variation-settings: "wdth" 100;
     font-style: normal;
     margin: 0;
-    background-color: rgb(144, 255, 140);
+    background-color: #90ff8c;
 
 }
 nav{
     margin:0 auto;
     margin-bottom: 10px;
-    margin-left: -100px;
+    margin-left: -10px;
     width: 100%;
     box-sizing: border-box;
     line-height: 30px;
@@ -30,7 +30,45 @@ nav a{
     font-weight: bold;
 }
 nav a:hover {
-    color:rgb(255, 135, 245);
+    color:rgb(204, 255, 191);
+}
+#wrapper {
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.collums{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    gap: 10px;
+}
+.collums img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    
+    
+}
+.collums h3{
+    padding-top: 20px;
+    display: block;
+    width:100%;
+    height: auto;
+    font-size: 22px;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+.collums p{
+    padding-top: 20px;
+    display: block;
+    width: 80%;
+    height: auto;
+    
 }
 header h1 {
     text-align: right;
@@ -44,4 +82,60 @@ header h2{
     text-align: right;
     font-size: 25px;
     color:rgb(0, 0, 0);
+}
+@media (max-width: 480px) {
+    nav{
+    margin:0 auto;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    border-bottom: 3px solid rgb(31, 168, 104);
+    z-index: 1000;
+}
+    #wrapper {
+    margin-top: 0px;
+    float: left;
+    width: 100%;
+    padding-left: 0px;
+}
+
+    .collums{
+    display: grid;
+    grid-template-columns: auto ;
+    max-width: 100%;
+    
+}
+.collums img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-left: 0px;
+    
+    
+}
+.collums h3{
+    padding-top: 20px;
+    display: block;
+    width:100%;
+    height: auto;
+    font-size: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.collums p{
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    
+}
 }

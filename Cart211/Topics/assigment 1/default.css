@@ -94,6 +94,9 @@ header h4{
     margin-top: -20px;
 
 }
+footer{
+    padding-left: 10px;
+}
 @media (max-width: 500px) {
     nav{
     margin:0 auto;

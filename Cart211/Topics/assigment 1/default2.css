@@ -32,32 +32,59 @@ nav a{
 nav a:hover {
     color:rgb(204, 255, 191);
 }
-#wrapper {
-   
-    margin-top: 0px;
-    float: left;
-    width: 100%;
-    margin-left: 50px;
-}
 
-header h1 {
+
+main h1 {
     text-align: center;
     font-size: 33px;
     margin-bottom: 5px;
     color:rgb(0, 0, 0);
 }
-header h2{
+main h2{
     margin-top: 0px;
     margin: bottom ;
-    text-align: right;
+    text-align: center;
     font-size: 22px;
 
     color:rgb(0, 0, 0);
 }
-header h3{
+h4{
     text-align: center;
+    padding-bottom: 0px;
 }
-header h4{
-    margin-top: -20px;
+
+.collum{
+    display: grid;
+    grid-template-columns: auto auto ;
+    max-width: 100%;
+   
+}
+.collum img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-bottom: 80px;
+    
+    
+}
+
+main figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+header figcaption{
+    margin-top: -10px;
+    padding-left: 0px;
+    text-align: center;
 
 }

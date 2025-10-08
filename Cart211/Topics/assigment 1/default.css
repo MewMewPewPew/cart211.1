@@ -107,7 +107,7 @@ header h4{
     justify-content: space-around;
     align-items: center;
     flex-wrap:wrap;
-    border-bottom: 3px solid rgb(31, 168, 104);
+    border-bottom: 3px solid rgb(0, 0, 0);
     z-index: 1000;
 }
     #wrapper {

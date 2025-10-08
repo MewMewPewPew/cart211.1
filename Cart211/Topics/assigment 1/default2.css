@@ -88,3 +88,21 @@ header figcaption{
     text-align: center;
 
 }
+@media (max-width: 500px) {
+    nav{
+    margin:0 auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+}

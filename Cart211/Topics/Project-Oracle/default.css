@@ -201,3 +201,43 @@ header h1 {
     text-decoration: none;
 }
 
+/*QUIZ PAGE */
+/*add sword */
+#background3{
+    position:relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    /*margin-top: 3%;*/
+    width: 42%;
+    z-index: -1;
+    /*add frame border-image:url(); */
+    
+}
+#construction{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    color: #bedad9;
+    top: 500px;
+    text-decoration: none;
+}
+
+
+/*CArds PAGE */
+
+/*Explanation PAGE */
+
+.Explanation{
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #bedad9;
+    position:relative;
+    margin: 20px;
+}
+
+.social{
+    color: #bedad9;
+}

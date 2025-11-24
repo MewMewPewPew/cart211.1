@@ -11,7 +11,7 @@ changeText.addEventListener("click", function () {
   document.getElementById("answer1").style.display = "none";
   document.getElementById("answer2").style.display = "none";
   document.getElementById("condition").style.display = "block";
-  document.getElementById("understand").style.display = "block";
+  document.getElementById("understand").style.display = "flex";
 
 
 }) 

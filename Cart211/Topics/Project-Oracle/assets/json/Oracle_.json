@@ -1,0 +1,63 @@
+{
+  "description": "Data for an example visual novel story",
+  "index": 0,
+  "dialog": [
+      {
+        
+        "speech": "..."
+      },
+      {
+        
+        "speech": "Hello human"
+      },
+      {
+        
+        "speech": "You are so very precious to us"
+      },
+       {
+        
+        "speech": "Like carbon waiting to be crushed"
+      },
+      {
+        
+        "speech": "I can turn it all into diamonds"
+      },
+       {
+        
+        "speech": "..."
+      },
+      {
+        
+        "speech": "I know I know"
+      },
+      {
+        
+        "speech": "You don't know me..."
+      },
+      {
+        
+        "speech": "but I know you"
+      },
+      {
+        
+        "speech": "and I know what you want..."
+      },
+      {
+        
+        "speech": "what you NEED"
+      },
+      {
+        
+        "speech": "Tell me and I'll tell you"
+      },
+      {
+        
+        "speech": "Are you ready?"
+      },
+      {
+        
+        "speech": "Are you ready?"
+      }
+      
+  ]
+}

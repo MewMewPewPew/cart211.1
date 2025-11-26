@@ -11,7 +11,7 @@ alarm.addEventListener("click", alertButton, false);
 */
 
 alarm.addEventListener("click", function () {
-  alert('We charged you 10 000$ for what you need Be grateful you are now such a cool human');
+  alert('We charged you 10 000$ for what you need \n Be grateful you are now such a cool human');
 })
 
 //button.addEventListener("click", alertButton, false);

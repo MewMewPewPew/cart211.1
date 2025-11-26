@@ -17,7 +17,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     z-index: -1;
-    
+
 
 }
 
@@ -55,11 +55,12 @@ body {
     transform: translate(-50%);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #e4f0ef;
-    
+
     background-color: rgba(190, 218, 217, 0);
     color: rgb(0, 0, 0);
 
 }
+
 .aftertext {
     display: none;
 }
@@ -89,6 +90,7 @@ body {
     color: rgba(0, 0, 0, 0);
     border: 2px solid rgba(0, 0, 0, 0);
 }
+
 /*
 .aftertext {
     
@@ -138,18 +140,18 @@ body {
 }
 
 header h1 {
-    position:flex;
+    position: flex;
     justify-items: center;
     font-weight: 400;
     font-size: 80px;
     color: #ffe11b;
-    
-   
+
+
 }
 
 #button2 {
-    position:relative;
-    position:flex;
+    position: relative;
+    position: flex;
     font-family: "Jacquard 12", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -159,11 +161,12 @@ header h1 {
     color: #360568;
     border: rgba(190, 218, 217, 0);
     text-decoration: underline;
-    
+
 }
+
 /* img*/
 #background2 {
-    position:relative;
+    position: relative;
     display: flex;
     margin-top: -80px;
     margin-left: auto;
@@ -203,12 +206,14 @@ header h1 {
     border: rgba(190, 218, 217, 0);
 }
 
-#answer2:hover ,
+#answer2:hover,
 #button2:hover {
     color: #ffe11b;
     filter: blur(0px);
 }
-#answer1:hover, #understand:hover {
+
+#answer1:hover,
+#understand:hover {
     color: #ff1b1b;
 }
 
@@ -219,12 +224,12 @@ header h1 {
 
     display: none;
     position: relative;
-    
+
     justify-content: center;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-
+    top: -480px;
 
     color: #ff1b1b;
 }
@@ -238,8 +243,8 @@ header h1 {
     font-size: 30px;
     justify-content: center;
     text-align: center;
-    top: -302px;
-    left: 263px;
+    top: -342px;
+    left: 115px;
     background-color: rgba(190, 218, 217, 0);
     color: #ffe11b;
     border: rgba(190, 218, 217, 0);
@@ -247,18 +252,109 @@ header h1 {
 }
 
 /*CArds PAGE */
+#Text1 {
+    position: relative;
+    display: flex;
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    top: 100px;
+    color: #ff1b1b;
+    justify-content: center;
+    text-align: center;
+}
+
+#Text2 {
+    position: relative;
+    display: flex;
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 40px;
+    top: 100px;
+    color: #bedad9;
+    justify-content: center;
+    text-align: center;
+}
+
+#Purchase {
+    position: relative;
+    display: flex;
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 100px;
+    top: 720px;
+    color: #ffe11b;
+    justify-content: center;
+    text-align: center;
+}
+
+#background3 {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    /*margin-top: 3%;*/
+    width: 1000px;
+    margin-top: -120px;
+    z-index: -1;
+    /*add frame border-image:url(); */
+
+}
+
 
 /*Explanation PAGE */
 
-.Explanation{
+#Explanation {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     font-family: "Jacquard 12", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
     color: #bedad9;
-    position:relative;
-    margin: 20px;
+    position: relative;
+
+    font-size: 100px;
+
 }
 
-.social{
+#p {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
     color: #bedad9;
+    position: relative;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+    top: 50px;
+}
+
+#p2 {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #bedad9;
+    position: relative;
+    margin: 20px auto;
+    font-size: 30px;
+    top: 120px;
 }

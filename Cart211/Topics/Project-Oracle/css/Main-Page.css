@@ -5,18 +5,49 @@ body {
     font-weight: 400;
     /*  background-image: linear-gradient( #000000, #f07bd1);*/
     background-color: #000000;
-    background-image: url(assets/image/Main-page_0.png);
+    background-image: url(../assets/image/Main-page_0.png);
     background-size: 60%;
     background-position: top;
     background-repeat: no-repeat;
-    
-    
+
+
 }
-#card{
+
+#card {
     position: relative;
     display: block;
     text-align: center;
-    top: 500px;
+    top: 700px;
     font-size: 30px;
-    color:aliceblue;
+    color: aliceblue;
+    /*background-color: aquamarine;
+    padding-top: 100px;
+    padding-bottom: 100px;*/
+
+}
+
+#cardimg {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    top: 500px;
+    justify-content: center;
+    width: 200px;
+}
+
+#text- {
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    top: 160px;
+    justify-content: center;
+    color: #ffe11b;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff22;
 }

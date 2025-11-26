@@ -1,9 +1,20 @@
 
 
-let alarm = document.getElementById("Purchase");
+const alarm = document.getElementById("Purchase");
+/*
+function alertButton() {
+  alert('We charged you 10 000$ for what you need Be grateful you are now such a cool human');
+
+}
+alarm.addEventListener("click", alertButton, false);
+
+*/
+
 alarm.addEventListener("click", function () {
-  alert("We charged you 10 000$ for what you need \n Be grateful you are now such a cool human");
-}, true);
+  alert('We charged you 10 000$ for what you need Be grateful you are now such a cool human');
+})
+
+//button.addEventListener("click", alertButton, false);
 
 //privacy code
 /*

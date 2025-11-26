@@ -24,6 +24,8 @@
     <!--Libraries-->
     <script src="js/code_novel.js"></script>
     <script src="js/p5.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     
 
     <!--google fonts (Xanh Mono, Jacquard 12, Barlow, coral pixel )-->
@@ -63,90 +65,116 @@
     <header>
         <a target="_self" href="Main-Page.html" id="construction">next page</a>
     <a id="quiz">Tell me now</a>
-    </header>    
-    
-    <div class="question" id="q1"  data-next="q2">
-    <h2>Question 1:</h2>
-    <p>Which of the following is your favourite movie? </p>
-    <ol class="button">
-    <li data-score="Ninja">Karate Kid</li>
-    <li data-score="Robot">Wall-E</li>
-    <li data-score="Pirate">Pirates of the Caribbean</li>
-    <li data-score="Zombie">Dawn of the Dead</li>
-    </ol>
+    </header> 
+    <div class="quiz-container">
+        <div class="title">Personality Quiz</div>
+        <div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span class="option1"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
     </div>
-    <div class="question" id="q2" data-next="q3">
-  <h2>Question 2:</h2>
-  <p>A building is on fire and you hear a child's screaming for help from the third floor window. Do you: </p>
-  <ol class="button">
-    <li data-score="Ninja">Mysteriously disappear and re-appear with the children</li>
-    <li data-score="Robot">Run in and save the child on the second floor, because i'm made of metal and fire won't hurt me!</li>
-    <li data-score="Pirate">Dress up as a pirate and loot the surrounding neighbourhood, including the bank?</li>
-    <li data-score="Zombie">Eat all the brains. Nom nom uuuuggghhh.</li>
-  </ol>
-</div>
 
-<div class="question" id="q3" data-next="q4">
-  <h2>Question 3:</h2>
-  <p>Where do you call home?</p>
-  <ol class="button">
-    <li data-score="Ninja">A magical castle in the English countryside </li>
-    <li data-score="Robot">A dark and secret cave in the distant mountains</li>
-    <li>A secluded hut in the woods</li>
-    <li>34 Tooranimble St, Kanimboolaga NSW</li>
-    <li>The sea is my only home. Man the rigging you scurvy sea dog! YARR</li>
-  </ol>
-</div>
+    <div class="result">
 
-<div class="question" id="q4" data-next="q5">
-  <h2>Question 4:</h2>
-  <p>What is your favourite letter?</p>
-  <ol class="button">
-    <li data-score="Ninja">A</li>
-    <li data-score="Robot">B</li>
-    <li>C</li>
-    <li>Rrrr</li>
-  </ol>
-</div>
-<div class="question" id="q5" data-next="q6">
-  <h2>Question 5:</h2>
-  <p>What is your favourite music?</p>
-  <ol class="button">
-    <li data-score="Ninja">Rrrr and B</li>
-    <li data-score="Robot">Robo-boogie</li>
-    <li></li>
-    <li></li>
-  </ol>
-</div>
-<div class="question" id="q6" data-next="q7">
-  <h2>Question 6:</h2>
-  <p>If you were a pirate, would you:</p>
-  <ol class="button">
-    <li data-score="Ninja">Lead a quiet life of solace and penance</li>
-    <li data-score="Robot">Loot and plunder</li>
-    <li>Wear an eye-patch</li>
-    <li>Have one leg</li>
-    <li>All of the above, except for number 1. </li>
-  </ol>
-</div>
-<div class="question" id="q7" data-next="result">
-  <h2>Question 7:</h2>
-  <p>Do you like pirates?</p>
-  <ol class="button">
-    <li data-score="Ninja">Yes</li>
-    <li data-score="Robot">No</li>
-    <li>I'm just here for the free cookies</li>
-    <li>How did i get this far into the quiz? What am i doing with my life??</li>
-  </ol>
-</div>
-
-<div id="result">
-  <h2>HAHA we fooled you matey. You're a pirate through and through.</h2>
-</div>
-<img id="background3" src="assets/image/oracle.png">
-<img id="sword" src="assets/image/sword_.png">
+    </div>   
+    <img id="background3" src="assets/image/oracle.png">
+    <img id="sword" src="assets/image/sword_.png">
     
-
+    
+    <!-- OLD PERSONALITY QUIZ
+     <div class="question" id="q1"  data-next="q2">
+     <h2>Question 1:</h2>
+     <p>Which of the following is your favourite movie? </p>
+     <ol class="button">
+     <li data-score="Ninja">Karate Kid</li>
+     <li data-score="Robot">Wall-E</li>
+     <li data-score="Pirate">Pirates of the Caribbean</li>
+     <li data-score="Zombie">Dawn of the Dead</li>
+     </ol>
+     </div>
+     <div class="question" id="q2" data-next="q3">
+   <h2>Question 2:</h2>
+   <p>A building is on fire and you hear a child's screaming for help from the third floor window. Do you: </p>
+   <ol class="button">
+     <li data-score="Ninja">Mysteriously disappear and re-appear with the children</li>
+     <li data-score="Robot">Run in and save the child on the second floor, because i'm made of metal and fire won't hurt me!</li>
+     <li data-score="Pirate">Dress up as a pirate and loot the surrounding neighbourhood, including the bank?</li>
+     <li data-score="Zombie">Eat all the brains. Nom nom uuuuggghhh.</li>
+   </ol>
+ </div>
+ 
+ <div class="question" id="q3" data-next="q4">
+   <h2>Question 3:</h2>
+   <p>Where do you call home?</p>
+   <ol class="button">
+     <li data-score="Ninja">A magical castle in the English countryside </li>
+     <li data-score="Robot">A dark and secret cave in the distant mountains</li>
+     <li>A secluded hut in the woods</li>
+     <li>34 Tooranimble St, Kanimboolaga NSW</li>
+     <li>The sea is my only home. Man the rigging you scurvy sea dog! YARR</li>
+   </ol>
+ </div>
+ 
+ <div class="question" id="q4" data-next="q5">
+   <h2>Question 4:</h2>
+   <p>What is your favourite letter?</p>
+   <ol class="button">
+     <li data-score="Ninja">A</li>
+     <li data-score="Robot">B</li>
+     <li>C</li>
+     <li>Rrrr</li>
+   </ol>
+ </div>
+ <div class="question" id="q5" data-next="q6">
+   <h2>Question 5:</h2>
+   <p>What is your favourite music?</p>
+   <ol class="button">
+     <li data-score="Ninja">Rrrr and B</li>
+     <li data-score="Robot">Robo-boogie</li>
+     <li></li>
+     <li></li>
+   </ol>
+ </div>
+ <div class="question" id="q6" data-next="q7">
+   <h2>Question 6:</h2>
+   <p>If you were a pirate, would you:</p>
+   <ol class="button">
+     <li data-score="Ninja">Lead a quiet life of solace and penance</li>
+     <li data-score="Robot">Loot and plunder</li>
+     <li>Wear an eye-patch</li>
+     <li>Have one leg</li>
+     <li>All of the above, except for number 1. </li>
+   </ol>
+ </div>
+ <div class="question" id="q7" data-next="result">
+   <h2>Question 7:</h2>
+   <p>Do you like pirates?</p>
+   <ol class="button">
+     <li data-score="Ninja">Yes</li>
+     <li data-score="Robot">No</li>
+     <li>I'm just here for the free cookies</li>
+     <li>How did i get this far into the quiz? What am i doing with my life??</li>
+   </ol>
+ </div>
+ 
+ <div id="result">
+   <h2>HAHA we fooled you matey. You're a pirate through and through.</h2>
+ </div>
+  -->
 
 </body>
 

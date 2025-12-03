@@ -39,10 +39,10 @@ function draw() {
  */
 function displayDialog() {
   // Get the current dialog element
-  const element = story.dialog[story.index];
+  const oracleSays = story.dialog[story.index];
 
   // Construct the text to display out of the name and the speech
-  let displayText = element.speech ;
+  let displayText = oracleSays.speech ;
 
   
    
@@ -68,7 +68,7 @@ function displayDialog() {
  */
 function mousePressed() {
   // Get the current dialog element
-  const element = story.dialog[story.index];
+  const oracleSays = story.dialog[story.index];
   
   // Otherwise we should advance the dialog
   story.index += 1;
@@ -79,12 +79,13 @@ function mousePressed() {
 } 
 function startQuiz(){
   // Get the current dialog element
-  const element = story.dialog[story.index];
+  const oracleSays = story.dialog[story.index];
 //12
 // how the quiz looks (no text yet)
 // "#ff1b1b" "#360568" "#ffe11b" "#e5f0f0"
 // "#ad63f8" "#bedad9" "#eda2f0" "#9492cc"
-  if (story.index === 13){
+// story.index === 13
+  if (story.index === 5){
     
   push();
   fill("#1e053bff");
@@ -111,9 +112,18 @@ function startQuiz(){
   rect(windowWidth/2 -110, 490 , 240, 480,)
   pop();
     document.getElementById("quiz").style.display = "flex" ;
-    document.getElementById("background3").style.marginTop = "-45px" ;
+    document.getElementById("background3").style.top = "-3760px" ;
+    document.getElementById("sword").style.top = "-4050px" ;
+    //quiz css stuff
+    document.querySelector('.title').style.display = "flex";  
+    document.querySelector('.question').style.display = "flex";
+    document.querySelector('.controls').style.display = "flex";  
+    document.querySelector('.option').style.top = "200px";
+    document.querySelector('.option').style.top = "200px";
+    document.querySelector('.option').style.top = "200px";
+    //document.querySelector('.button').style.display = "flex";
     
-    //document.getElementById("q1").style.display = "flex";
+    
   }
 }
 //function swordMove
@@ -194,7 +204,7 @@ const questions = [
 let currentQuestion = 0;
 let score = [];
 let selectedAnswersData = [];
-const totalQuestions =questions.length;
+const totalQuestions = questions.length;
 
 const container = document.querySelector('.quiz-container');
 const questionEl = document.querySelector('.question');

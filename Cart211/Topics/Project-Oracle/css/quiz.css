@@ -10,30 +10,54 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     /*  background-image: linear-gradient( #000000, #f07bd1);*/
-    background-color: #000000;
+    background-color: #ffffff;
     text-decoration: none;
 }
 
 /*add sword */
-#background3{
-    position:relative;
+
+
+#frame{
+    position: relative;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     /*margin-top: 3%;*/
     width: 1000px;
-    margin-top: 0px;
-    z-index: -1;
-    /*add frame border-image:url(); */
-    
+    top: -1080px;
+  /*add frame border-image:url();
+    border-image-repeat: stretch;
+    border-style:groove; */
+     border-image-source: url('../assets/image/frame_oracle2.png') ;
+     border-image-width: 100px;
+     border-image-slice: 120;
+     border-image-repeat: stretch;
+     border-image-outset: 5px;
+     z-index: -1;
+}
+#background3{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    /*margin-top: 3%;*/
+    width: 1000px;
+    top: -2320px;
+     z-index: -2;
+}
+
+header {
+  display:flex;
+  height: 100px;
 }
 #construction{
     position:relative;
     display: none;
     justify-content: center;
-    color: #bedad9;
-    top: 500px;
+    color: #fc0000;
+    
     text-decoration: none;
     z-index: 2;
 }
@@ -58,7 +82,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    top: -250px;
+    top: -4050px;
     left: 20px;
     width: 150px;
     z-index: 2;
@@ -66,24 +90,26 @@ body {
 }
 
 
-
+/*
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing:initial;
 }
-/*
+
 body {
   margin: 0;
   padding: 0;
+  display: block;
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   color:#fff;
   line-height: 1.7rem;
     background-color: black;
-  background-image: radial-gradient(
+  /*background-image: radial-gradient(
     rgba(0, 150, 0, 0.75), black 120%
-  );
+  );*//*
  
 }
 
@@ -102,18 +128,23 @@ body::before {
 }
 */
 .quiz-container {
+  display: flex;
+  position: relative;
 border-radius:10px;
   text-shadow: 1px 1px white;
   padding: 3rem;
   text-shadow: 0 1px #00000010;
-  width: 80%;
+  
+  
   margin: 5rem auto;
-  display: flex;
+  
   flex-direction: column;
-  background: #090909;
+  /*background: #ffffff0d;*/
   min-height: 100vh;
 }
 .title {
+  display: none;
+  position: relative;
   margin-top: 0;
   margin-bottom: 3rem;
   color: #00ff66;
@@ -123,22 +154,29 @@ border-radius:10px;
   font-size: 3rem;
   letter-spacing:4px;
   text-align: center;
-  text-transform: uppercase;
+  
+  z-index: 3;
 }
 .question {
+  display: none;
+  position: relative;
   margin: 2rem 0;
   font-size: 1.5rem;
-  font-family:'vt323';
+  
   color:#00ff66;
-  text-transform:uppercase;
+  
   letter-spacing:1px;
+  z-index: 3;
 }
 .option {
+  display: flex;
+  position: relative;
   padding: 1rem;
   color: #fff;
   background: #000;
-  width: 80%;
+  top: 8100px;
   border-radius: 5px;
+  z-index: 3;
   transition: all 0.3s;
 }
 .option:hover {
@@ -148,10 +186,16 @@ border-radius:10px;
   background: #08038c;
   color: #000;
 }
+.controls{
+  display: none;
+  position: relative;
+}
 .controls > * {
   margin: 1rem;
 }
 button {
+  display: flex;
+  position: relative;
   padding: 0.5rem 1.5rem;
   border: none;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -186,6 +230,7 @@ button:focus {
 }
 .result {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 2rem;
   justify-content: center;
@@ -199,6 +244,8 @@ button:focus {
 }
 .summary {
   font-size: 1rem;
+  display: flex;
+  position: relative;
   text-shadow: 1px 1px #ffffff50;
   color: #00000099;
   background: rgba(255, 255, 255, 0.4);

@@ -227,9 +227,9 @@ header h1 {
 
     justify-content: center;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    top: -480px;
+    top: -650px;
 
     color: #ff1b1b;
 }
@@ -243,8 +243,8 @@ header h1 {
     font-size: 30px;
     justify-content: center;
     text-align: center;
-    top: -342px;
-    left: 115px;
+    top: -622px;
+    left: 160px;
     background-color: rgba(190, 218, 217, 0);
     color: #ffe11b;
     border: rgba(190, 218, 217, 0);

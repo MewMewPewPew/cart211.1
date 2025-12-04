@@ -14,6 +14,7 @@ function preload() {
   fontOracle = loadFont("assets/fonts/Alice_in_Wonderland_3.ttf")
   story = loadJSON("assets/json/Oracle_.json");
 }
+
 function windowResized(){
     resizeCanvas(windowWidth, windowHeight)
 }
@@ -85,7 +86,7 @@ function startQuiz(){
 // "#ff1b1b" "#360568" "#ffe11b" "#e5f0f0"
 // "#ad63f8" "#bedad9" "#eda2f0" "#9492cc"
 // story.index === 13
-  if (story.index === 5){
+  if (story.index === 13){
     
   push();
   fill("#1e053bff");
@@ -112,8 +113,9 @@ function startQuiz(){
   rect(windowWidth/2 -110, 490 , 240, 480,)
   pop();
     document.getElementById("quiz").style.display = "flex" ;
-    document.getElementById("background3").style.top = "-3760px" ;
-    document.getElementById("sword").style.top = "-4050px" ;
+    document.getElementById("background3").style.top = "-2560px" ;
+    document.getElementById("sword").style.top = "-2850px" ;
+    document.getElementById("frame").style.top = "-1320px"; 
     //quiz css stuff
     document.querySelector('.title').style.display = "flex";  
     document.querySelector('.question').style.display = "flex";

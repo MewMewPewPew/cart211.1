@@ -2,10 +2,13 @@
 /**
  * 
  */
+
+
 let story = undefined;
 var canvas;
 
 let fontOracle;
+
 
 
 //var userFullname = AJS.Meta.get("remote-user");
@@ -120,16 +123,15 @@ function startQuiz(){
     document.querySelector('.title').style.display = "flex";  
     document.querySelector('.question').style.display = "flex";
     document.querySelector('.controls').style.display = "flex";  
-    document.querySelector('.option').style.top = "200px";
-    document.querySelector('.option').style.top = "200px";
-    document.querySelector('.option').style.top = "200px";
+    //document.querySelector('.option').style.top = "100px";
+    quizCode();
     //document.querySelector('.button').style.display = "flex";
     
     
   }
 }
 //function swordMove
-
+function quizCode() {
 // QUESTIONS
 
 const questions = [
@@ -203,9 +205,11 @@ const questions = [
 ]
 
 
+
 let currentQuestion = 0;
 let score = [];
 let selectedAnswersData = [];
+
 const totalQuestions = questions.length;
 
 const container = document.querySelector('.quiz-container');
@@ -311,6 +315,7 @@ nextButton.addEventListener('click', loadNextQuestion);
 previousButton.addEventListener('click',loadPreviousQuestion);
 result.addEventListener('click',restartQuiz);
 
+}
 
 /*
 // Create an array object to store all the quiz answers. Each selected answer should increase the category score by 1. The highest score will be the personality 'type' in the results. 

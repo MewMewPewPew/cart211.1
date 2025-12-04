@@ -10,7 +10,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     /*  background-image: linear-gradient( #000000, #f07bd1);*/
-    background-color: #000000;
+    background-color: #ffffff;
     text-decoration: none;
 }
 
@@ -174,7 +174,7 @@ border-radius:10px;
   padding: 1rem;
   color: #fff;
   background: #000;
-  top: 8100px;
+  top: 0px;
   border-radius: 5px;
   z-index: 3;
   transition: all 0.3s;
@@ -186,10 +186,12 @@ border-radius:10px;
   background: #08038c;
   color: #000;
 }
+
 .controls{
-  display: none;
+  display: flex;
   position: relative;
 }
+
 .controls > * {
   margin: 1rem;
 }

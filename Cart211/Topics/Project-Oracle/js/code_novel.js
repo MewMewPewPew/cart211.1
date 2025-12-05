@@ -9,6 +9,10 @@ var canvas;
 
 let fontOracle;
 let questionQuiz = undefined;
+//let pictureBox = undefined;
+let colorSpeechBox = "rgba(0, 0, 0, 0.29)";
+let colorSpeech = "#ffffff";
+let testSpeechBox = undefined;
 //let question = null;
 
 
@@ -40,6 +44,7 @@ function preload() {
   fontOracle = loadFont("assets/fonts/Alice_in_Wonderland_3.ttf")
   story = loadJSON("assets/json/Oracle_.json");
   questionQuiz = loadJSON("assets/json/questionQuiz.json")
+// pictureBox = createImg("assets/image/fractal.png")
 }
 
 function windowResized(){
@@ -84,14 +89,14 @@ function displayDialog() {
   push();
   textAlign(CENTER, CENTER);
   textSize(25);
-  fill("#ffffffff");
+  fill(colorSpeech);
   textFont(fontOracle);
-  text(displayText, windowWidth/2 + 10, 800);
+  text(displayText, windowWidth/2 + 10, windowHeight/2 +250);
   pop();
   push();
-  fill("rgba(0, 0, 0, 0.29)");
+  fill(colorSpeechBox);
   noStroke();
-  rect(windowWidth/2 -128, 800 -40 , 280, 100,)
+  rect(windowWidth/2 -128, testSpeechBox , 280, 100,)
   pop();
   
 }
@@ -190,7 +195,7 @@ questions = [
 //currentQuestion = 0;
 //score = [];
 //selectedAnswersData = [];
-
+testSpeechBox = windowHeight/2 +250 -40;
 totalQuestions = questions.length;
 
 container = document.querySelector('.quiz-container');
@@ -214,7 +219,7 @@ function startQuiz(){
 // "#ad63f8" "#bedad9" "#eda2f0" "#9492cc"
 // story.index === 13
   if (story.index === 13){
-    
+    /*
   push();
   fill("#1e053bff");
   noStroke();
@@ -239,6 +244,10 @@ function startQuiz(){
   strokeWeight(5)
   rect(windowWidth/2 -110, 490 , 240, 480,)
   pop();
+  */
+ colorSpeech = "#ffffff00";
+colorSpeechBox = "rgba(0, 0, 0, 0.05)";
+testSpeechBox  = 0;
     document.getElementById("quiz").style.display = "flex" ;
     document.getElementById("background3").style.top = "-2560px" ;
     document.getElementById("sword").style.top = "-2850px" ;

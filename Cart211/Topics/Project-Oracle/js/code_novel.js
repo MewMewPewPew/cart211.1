@@ -1,5 +1,5 @@
-"use strict";
 /**
+ "use strict";
  * 
  */
 
@@ -8,14 +8,38 @@ let story = undefined;
 var canvas;
 
 let fontOracle;
+let questionQuiz = undefined;
+//let question = null;
 
 
+currentQuestion = 0;
+score = [];
+selectedAnswersData = [];
+
+totalQuestions = null;
+
+questions = null;
+container = null;
+questionEl = null;
+option1 = null;
+option2 = null;
+option3 = null;
+nextButton = null;
+previousButton = null;
+ restartButton = null;
+ result = null;
+
+// let question = undefined;
+//let option1Total = undefined;
+//let option2Total = undefined;
+//let option3Total = undefined;
 
 //var userFullname = AJS.Meta.get("remote-user");
 
 function preload() {
   fontOracle = loadFont("assets/fonts/Alice_in_Wonderland_3.ttf")
   story = loadJSON("assets/json/Oracle_.json");
+  questionQuiz = loadJSON("assets/json/questionQuiz.json")
 }
 
 function windowResized(){
@@ -25,7 +49,13 @@ function windowResized(){
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
+  /*
+  quizCode();
+    generateQuestions();
+    loadNextQuestion();
+    loadPreviousQuestion();
   
+  */
 }
 
 
@@ -81,60 +111,13 @@ function mousePressed() {
   }
   
 } 
-function startQuiz(){
-  // Get the current dialog element
-  const oracleSays = story.dialog[story.index];
-//12
-// how the quiz looks (no text yet)
-// "#ff1b1b" "#360568" "#ffe11b" "#e5f0f0"
-// "#ad63f8" "#bedad9" "#eda2f0" "#9492cc"
-// story.index === 13
-  if (story.index === 13){
-    
-  push();
-  fill("#1e053bff");
-  noStroke();
-  rect(windowWidth/2 -122, 475 , 265, 510,)
-  pop();
-  push();
-  fill("#cf5fd3ff");
-  noStroke();
-  rect(windowWidth/2 -121, 478 , 260, 500,)
-  fill("#360568");
-  noStroke();
-  rect(windowWidth/2 -120, 480 , 260, 500,)
-  pop();
-  push();
-  fill("#ffe11b");
-  noStroke();
-  rect(windowWidth/2 -115, 485 , 250, 490,)
-  pop();
-  push();
-  fill("#9492cc");
-  stroke("#360568");
-  strokeWeight(5)
-  rect(windowWidth/2 -110, 490 , 240, 480,)
-  pop();
-    document.getElementById("quiz").style.display = "flex" ;
-    document.getElementById("background3").style.top = "-2560px" ;
-    document.getElementById("sword").style.top = "-2850px" ;
-    document.getElementById("frame").style.top = "-1320px"; 
-    //quiz css stuff
-    document.querySelector('.title').style.display = "flex";  
-    document.querySelector('.question').style.display = "flex";
-    document.querySelector('.controls').style.display = "flex";  
-    //document.querySelector('.option').style.top = "100px";
-    quizCode();
-    //document.querySelector('.button').style.display = "flex";
-    
-    
-  }
-}
-//function swordMove
+
 function quizCode() {
 // QUESTIONS
-
-const questions = [
+/*
+let questions = questionQuiz.questions;
+*/
+questions = [
   {
     "question": "Age range?",
     "answer1": "under 18",
@@ -179,7 +162,7 @@ const questions = [
     "answer1Total": "1",
     "answer2": "You tend to eat snacks secretly.",
     "answer2Total": "2",
-    "answer3": "You prepare food and don\’t even look at the recipe.",
+    "answer3": "You prepare food and don’t even look at the recipe.",
     "answer3Total": "3"
   },
   {
@@ -203,27 +186,81 @@ const questions = [
     "answer3Total": "3"
   }
 ]
+  
+//currentQuestion = 0;
+//score = [];
+//selectedAnswersData = [];
 
+totalQuestions = questions.length;
 
+container = document.querySelector('.quiz-container');
+questionEl = document.querySelector('.question');
+option1 = document.querySelector('.option1');
+option2 = document.querySelector('.option2');
+option3 = document.querySelector('.option3');
+nextButton = document.querySelector('.next');
+previousButton = document.querySelector('.previous');
+restartButton = document.querySelector('.restart');
+result = document.querySelector('.result');
 
-let currentQuestion = 0;
-let score = [];
-let selectedAnswersData = [];
+}
 
-const totalQuestions = questions.length;
-
-const container = document.querySelector('.quiz-container');
-const questionEl = document.querySelector('.question');
-const option1 = document.querySelector('.option1');
-const option2 = document.querySelector('.option2');
-const option3 = document.querySelector('.option3');
-const nextButton = document.querySelector('.next');
-const previousButton = document.querySelector('.previous');
-const restartButton = document.querySelector('.restart');
-const result = document.querySelector('.result');
+function startQuiz(){
+  // Get the current dialog element
+  const oracleSays = story.dialog[story.index];
+//12
+// how the quiz looks (no text yet)
+// "#ff1b1b" "#360568" "#ffe11b" "#e5f0f0"
+// "#ad63f8" "#bedad9" "#eda2f0" "#9492cc"
+// story.index === 13
+  if (story.index === 13){
+    
+  push();
+  fill("#1e053bff");
+  noStroke();
+  rect(windowWidth/2 -122, 475 , 265, 510,)
+  pop();
+  push();
+  fill("#cf5fd3ff");
+  noStroke();
+  rect(windowWidth/2 -121, 478 , 260, 500,)
+  fill("#360568");
+  noStroke();
+  rect(windowWidth/2 -120, 480 , 260, 500,)
+  pop();
+  push();
+  fill("#ffe11b");
+  noStroke();
+  rect(windowWidth/2 -115, 485 , 250, 490,)
+  pop();
+  push();
+  fill("#9492cc");
+  stroke("#360568");
+  strokeWeight(5)
+  rect(windowWidth/2 -110, 490 , 240, 480,)
+  pop();
+    document.getElementById("quiz").style.display = "flex" ;
+    document.getElementById("background3").style.top = "-2560px" ;
+    document.getElementById("sword").style.top = "-2850px" ;
+    document.getElementById("frame").style.top = "-1320px"; 
+    //quiz css stuff
+    document.querySelector('.title').style.display = "flex";  
+    document.querySelector('.question').style.display = "flex";
+    document.querySelector('.controls').style.display = "flex";  
+    //document.querySelector('.option').style.top = "100px";
+    //for (e of document.querySelector('.option')){
+    //  e.style.display="flex"
+    //}
+    //document.querySelector('.button').style.display = "flex";
+    
+    
+  }
+}
+//function swordMove
 
 //Function to generate question 
 function generateQuestions (index) {
+
     //Select each question by passing it a particular index
     const question = questions[index];
     const option1Total = questions[index].answer1Total;
@@ -315,7 +352,7 @@ nextButton.addEventListener('click', loadNextQuestion);
 previousButton.addEventListener('click',loadPreviousQuestion);
 result.addEventListener('click',restartQuiz);
 
-}
+
 
 /*
 // Create an array object to store all the quiz answers. Each selected answer should increase the category score by 1. The highest score will be the personality 'type' in the results. 

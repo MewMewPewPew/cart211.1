@@ -36,6 +36,17 @@ uses of justice against us for any reasons. If you were to disobey,<br>  the pri
     "answerFreedom": "1"
   },
   {
+    "question": "Best word to describe you?",
+    "answer1": "Charismatic or Innovator",
+    "answerEgo": "1",
+    "answer2": "Good or Intelligent",
+    "answerOrder": "1",
+    "answer3": "Caring or Dependable",
+    "answerSocial": "1",
+    "answer4": "Free or Funny",
+    "answerFreedom": "1"
+  },
+  {
     "question": "How do you want to be remembered?",
     "answer1": "As someone who did great things, discovered something new or helped people",
     "answerEgo": "1",
@@ -58,45 +69,67 @@ uses of justice against us for any reasons. If you were to disobey,<br>  the pri
     "answer4": "Freedom, Love, Glory & Money",
     "answerFreedom": "1"
   },
-  {***
-    "question": "Best Sentence to describe you?",
-    "answer1": "Glory, Freedom, Money & Love",
+  {
+    "question": "What would be your worst flaw?",
+    "answer1": "Egotistical or Perfectionist",
     "answerEgo": "1",
-    "answer2": "Money, Glory, Love & Freedom",
+    "answer2": "Naive, Controlling or Undecisive",
     "answerOrder": "1",
-    "answer3": "Love, Money, Freedom & Glory",
+    "answer3": "People-pleaser, Selfless or Cynical",
     "answerSocial": "1",
-    "answer4": "Freedom, Love, Glory & Money",
+    "answer4": "Unpredictable, Obsessed or Avoidant",
     "answerFreedom": "1"
   },
-  {***
-    "question": "Which best describes your relationship with food",
-    "answer1": "Glory, Freedom, Money & Love",
+  {
+    "question": "Which activity would you want to do most?",
+    "answer1": "Create something new, help someone or understand new concepts and talk about it to people",
     "answerEgo": "1",
-    "answer2": "Money, Glory, Love & Freedom",
+    "answer2": "Be productive in your own way, maybe learn new things. ",
     "answerOrder": "1",
-    "answer3": "Love, Money, Freedom & Glory",
+    "answer3": "Hang out with friends or family",
     "answerSocial": "1",
-    "answer4": "Freedom, Love, Glory & Money",
+    "answer4": "Explore a new place, do something you've never done before",
     "answerFreedom": "1"
   },
   {
     "question":
       "You make plans with a friend and they cancel on you, what do you do?",
-    "answer1": "You are annoyed and let them know. You take this opportunity to focus on yourself." 
+    "answer1": "You are annoyed and let them know. You take this opportunity to focus on yourself",
     "answerEgo": "1",
     "answer2": "You ask them why to see if it's a good reason. You try to see the silver lining of it.",
     "answerOrder": "1",
-    "answer3": "Ask them if they are ok, if you can help them in any way."
+    "answer3": "Ask them if they are ok, if you can help them in any way",
     "answerSocial": "1",
     "answer4": "You don't mind it, it wasn't mean to be. You decide to have fun in this new adventure."
+    "answerFreedom": "1"
+  },
+  {
+    "question": "What's your biggest insecurity to be percieved as?",
+    "answer1": "Weak, Unremarkable or Detrimental",
+    "answerEgo": "1",
+    "answer2": "Being wrong, Powerless or Stupid",
+    "answerOrder": "1",
+    "answer3": "Unlovable, Selfish or Standing out",
+    "answerSocial": "1",
+    "answer4": "Conformed, Powerless or Boring ",
+    "answerFreedom": "1"
+  },
+  {
+    "question": "If you could give one advice to your younger self, what would it be?",
+    "answer1": "Don't let your fears stop you from becoming the great person you are ",
+    "answerEgo": "1",
+    "answer2": "You are doing the best you can with what you know, you know how to bring the best out of others",
+    "answerOrder": "1",
+    "answer3": "Surround yourself with people who will love you as much as you love them",
+    "answerSocial": "1",
+    "answer4": "Follow your heart, do the things that make you happy and fight for the things you care",
     "answerFreedom": "1"
   },
   {
     "question": "What do you think about the Oracle community?",
     "answer1": "I just want to know my result",
     "answerEgo": "1",
-    "answer2": "They are ok I guess",
+    "answer2": "They are ok I guess, I don't know them",
     "answerOrder": "1",
     "answer3": "Yay! I'm having so much fun :3",
     "answerSocial": "1",

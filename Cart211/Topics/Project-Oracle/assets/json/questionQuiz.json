@@ -1,7 +1,6 @@
 {
-    "description":"Questions for the Oracle quiz",
     "index": 0,
-    "questionsQ" : [
+    "questions" : [
   {
     "question": "Age range?",
     "answer1": "under 18",

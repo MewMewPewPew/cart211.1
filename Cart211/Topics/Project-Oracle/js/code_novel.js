@@ -248,9 +248,9 @@ function startQuiz(){
     document.querySelector('.question').style.display = "flex";
     document.querySelector('.controls').style.display = "flex";  
     //document.querySelector('.option').style.top = "100px";
-    //for (e of document.querySelector('.option')){
-    //  e.style.display="flex"
-    //}
+    for (let e of document.querySelectorAll('.option')){
+      e.style.display="flex"
+    }
     //document.querySelector('.button').style.display = "flex";
     
     

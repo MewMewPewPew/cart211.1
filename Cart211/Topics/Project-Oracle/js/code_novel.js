@@ -258,7 +258,7 @@ function startQuiz(){
     document.getElementById("background3").style.marginTop = "-50%" ;
     document.getElementById("sword").style.marginTop = "-10%" ;
     document.getElementById("sword").style.transform = "rotate(180deg)" ;
-    document.getElementById("frame").style.marginTop = "-83%"; 
+    document.getElementById("frame").style.marginTop = "-86%"; 
     //quiz css stuff
     document.querySelector('.title').style.display = "flex";  
     document.querySelector('.question').style.display = "flex";

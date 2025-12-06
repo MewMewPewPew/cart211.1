@@ -3,9 +3,7 @@
 html {
   box-sizing: border-box;
 } 
-#defaultCanvas0.p5Canvas{
-  height: 1000px;
-}
+
 
 /* ?? */
 body {
@@ -68,13 +66,13 @@ header {
 
 #quiz {
     font-weight: 400;
-    font-size: 45px;
+    font-size: 20px;
     position:relative; 
     display: none;
     justify-content: center;
-    color: #cf5fd3ff;
+    color: rgba(255, 255, 255, 0.37);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ffffff77;
+    -webkit-text-stroke-color: #ffffff1e;
     
     left: 5px;
     text-decoration: none;
@@ -153,7 +151,7 @@ body::before {
   position: relative;
   margin-top: 0;
   margin-bottom: 3rem;
-  color: #00ff663a;
+  color: #00ff6600;
   font-family:'vt323';
   font-weight:bold;
   font-weight: 400;
@@ -180,15 +178,15 @@ body::before {
   padding: 1rem;
   color: #fff;
   background: #000;
-  top: 50%;
   margin-left: 30%;
   margin-right: 30%;
-  border-radius: 5px;
+  border-radius: 100px;
+  margin-bottom: 2px;
   z-index: 3;
   transition: all 0.3s;
 }
 .option:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 171, 223, 0.4);
 }
 .option input:checked .option {
   background: #08038c;
@@ -196,8 +194,10 @@ body::before {
 }
 
 .controls{
+  
   display: none;
   position: relative;
+  
   top: 30px;
   margin-left: 20%;
   
@@ -208,25 +208,34 @@ body::before {
   margin: 4rem;
 }*/
 button {
+  
   display: flex;
   position: relative;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   border: none;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  font-weight: 300;
+  
   color: rgb(0, 0, 0);
   outline: none;
   transform: scale(0.98);
   transition: all 0.2s;
 }
 button.previous {
+  font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
   background: #ae63f87a;
   color: #000000;
 }
 button.next {
+  font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
   margin-left: 60%;
-  color: #ffffff;
+  color: #000000;
   background: #ffd51bcb;
 }
 button.restart {

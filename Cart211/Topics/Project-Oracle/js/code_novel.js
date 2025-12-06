@@ -22,9 +22,9 @@ selectedAnswersData = [];
 
 totalQuestions = null;
 
-questions = null;
+let questions = [];
 container = null;
-questionEl = null;
+let questionEl = null;
 option1 = null;
 option2 = null;
 option3 = null;
@@ -32,6 +32,11 @@ nextButton = null;
 previousButton = null;
  restartButton = null;
  result = null;
+
+let question = null;
+let option1Total  = null;
+let option2Total = null;
+let option3Total = null;
 
 // let question = undefined;
 //let option1Total = undefined;
@@ -91,12 +96,12 @@ function displayDialog() {
   textSize(25);
   fill(colorSpeech);
   textFont(fontOracle);
-  text(displayText, windowWidth/2 + 10, windowHeight/2 +250);
+  text(displayText, windowWidth/2 , windowHeight/2 +200);
   pop();
   push();
   fill(colorSpeechBox);
   noStroke();
-  rect(windowWidth/2 -128, testSpeechBox , 280, 100,)
+  rect(windowWidth/2 -150, testSpeechBox , 300, 40,)
   pop();
   
 }
@@ -195,7 +200,8 @@ questions = [
 //currentQuestion = 0;
 //score = [];
 //selectedAnswersData = [];
-testSpeechBox = windowHeight/2 +250 -40;
+testSpeechBox = windowHeight/2 +180 ;
+
 totalQuestions = questions.length;
 
 container = document.querySelector('.quiz-container');
@@ -245,13 +251,14 @@ function startQuiz(){
   rect(windowWidth/2 -110, 490 , 240, 480,)
   pop();
   */
- colorSpeech = "#ffffff00";
-colorSpeechBox = "rgba(0, 0, 0, 0.05)";
-testSpeechBox  = 0;
+ //colorSpeech = "#ffffff00";
+//colorSpeechBox = "rgba(0, 0, 0, 0.05)";
+//testSpeechBox  = 500;
     document.getElementById("quiz").style.display = "flex" ;
-    document.getElementById("background3").style.top = "-2560px" ;
-    document.getElementById("sword").style.top = "-2850px" ;
-    document.getElementById("frame").style.top = "-1320px"; 
+    document.getElementById("background3").style.marginTop = "-50%" ;
+    document.getElementById("sword").style.marginTop = "-10%" ;
+    document.getElementById("sword").style.transform = "rotate(180deg)" ;
+    document.getElementById("frame").style.marginTop = "-83%"; 
     //quiz css stuff
     document.querySelector('.title').style.display = "flex";  
     document.querySelector('.question').style.display = "flex";
@@ -271,10 +278,10 @@ testSpeechBox  = 0;
 function generateQuestions (index) {
 
     //Select each question by passing it a particular index
-    const question = questions[index];
-    const option1Total = questions[index].answer1Total;
-    const option2Total = questions[index].answer2Total;
-    const option3Total = questions[index].answer3Total;
+    question = questions[index];
+    option1Total = questions[index].answer1Total;
+    option2Total = questions[index].answer2Total;
+    option3Total = questions[index].answer3Total;
     //Populate html elements 
     questionEl.innerHTML = `${index + 1}. ${question.question}`
     option1.setAttribute('data-total', `${option1Total}`);

@@ -1,4 +1,4 @@
-## For the privacy condition page : 
+# For the privacy condition page : 
 "nothing to worry about"
 
 By agreeing to our conditions,<br> 
@@ -157,3 +157,26 @@ Freedom : relating to experiencing the world, living for pleasure and purpose.
     - explorer
     - outlaw/rebel
     - jester
+
+## Card choice : 
+The user choose 1 card 
+and then gets a personified digital magic potion to consume & purchace !
+
+- magician : Power of understanding, underestand anything and project unconceivable things ! 
+- hero : Power to be strong ! Protect your loved ones by defeating any ennemy on your way !
+- creator: Power of materialization, create any tool or art with your increadible mind !
+- innocent: Power to bring the good out of people, that you should give with or without consent !
+- ruler: Power to make your words an order, you know whats best for others !
+- sage: Power of knowledge, know all there is to know, use it to teach and make humanity better !
+- lover: Power of love, you will be loved by all and have profound intimate relationships with the lucky ones !
+- caregiver: Power of healing, you will be able to heal any physical or mental hurts of the world !
+- everyman: Power of friendship, create and assemble communities, you will never be alone !
+- explorer: Power of teleportation, You will never be constrained, go where ever you want when ever !
+- outlaw/rebel: Power of Inspiration, your words inspire other to join your cause ! Change the world !
+- jester: Power of Sillyness, a funny and conveiniant object always appears near you to make anyone you want happy !
+
+# Explanation text ?
+
+This project was conceived to offer a fun experience reflecting the less fun reality of Surveillance Capitalism. Taking inspiration from "The Age of Surveillance Capitalism" by Shoshana Zubof, I explored the aspect of fortune-telling and the prediction (or manipulation) of one's behavior/ desire to purchase. There is an interesting contrast in the usually known pseudoscience of fortunes-telling and the one of google that uses data pattern science with computers instead of intuition, connection and communication with a real person. I used a lot of religious symbolism to offer more interesting experience for the people who know. Slowly, the way the internet has also become and proposed itself as an all knowing entity when the goal of google's algorithm (now replicated by any willing compagnies) is to collect as much data on individuals. This raw material of information didn't used to be processed, but around the 2000's and with the ever-growing pressure of capitalism to make money, our materials (data) was linked and patterns where made so that advertising could be targeted on someone who probably will want it. In a over-consuming world where advertising is the product sold, knowing how to sell to people based on their insecurites, purposes, fears and desire is more than lucrative. To replicate this, I followed Carl Jung's 12 archetype of personalities divided in 4 quadrants often used in advertising to sell identity as a product. Sadly, the consumer isn't notified by this process that can be call manipulation at this point. Obviously, surveillance capitalism is the evolution of capitalism, the root of the problem being this endless cycle of justifying exploitation (not paying for the ressources and/or labour) for the creation of new desires(called need) for profit, with a constant sense of urgency and distraction. Advertising can be a form of propaganda, It is everywhere and it there's no escaping if we participate in this society. Understanding and acknowledging this system is the first step for change and protection. The second step to liberating ourself from manipulation is to detach ourselves from and stagnant identities and desire. Unlearn from all these archetypes (used in advertising) we've all been subjected to all our lives and attached identities we've consciously and unconsciously restrained ourselves to. The third step would be to create or intergrate counter-cultures that values authencity and sharing that go against any form of cruelty and sees the beauty of the human (or any living being) purpose to only exist, instead of competing and comparing each other to provide and prove one's value (with purchases in this case).
+
+Here instead of providing advice, which is how tarot is often used, "the Oracle" provides needs purchases. This absurdity with the pressure to accept harmeful conditions and making yourself vulnerable by giving personal information to strangers is now practicly the norm and what I want to critizise. 

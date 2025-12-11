@@ -1,6 +1,7 @@
 
 
 const alarm = document.getElementById("Purchase");
+const alarm2 = document.getElementById("Purchase2");
 /*
 function alertButton() {
   alert('We charged you 10 000$ for what you need Be grateful you are now such a cool human');
@@ -13,7 +14,9 @@ alarm.addEventListener("click", alertButton, false);
 alarm.addEventListener("click", function () {
   alert('We charged you 10 000$ for what you need \n Be grateful you are now such a cool human');
 })
-
+alarm2.addEventListener("click", function () {
+  alert('We charged you 10 000$ for what you need \n Be grateful you are now such a cool human');
+})
 //button.addEventListener("click", alertButton, false);
 
 //privacy code

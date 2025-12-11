@@ -259,7 +259,7 @@ header h1 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 60px;
-    top: 100px;
+    top: -10px;
     color: #ff1b1b;
     justify-content: center;
     text-align: center;
@@ -272,10 +272,12 @@ header h1 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 40px;
-    top: 100px;
+    top: -20px;
     color: #bedad9;
     justify-content: center;
     text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 #Purchase {
@@ -285,7 +287,19 @@ header h1 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 100px;
-    top: 720px;
+    top: -20px;
+    color: #ffe11b;
+    justify-content: center;
+    text-align: center;
+}
+#Purchase2 {
+    position: relative;
+    display: flex;
+    font-family: "Jacquard 12", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 100px;
+    top: -50px;
     color: #ffe11b;
     justify-content: center;
     text-align: center;
@@ -298,10 +312,87 @@ header h1 {
     margin-right: auto;
     align-items: center;
     /*margin-top: 3%;*/
-    width: 1000px;
+    width: 30%;
     margin-top: -120px;
     z-index: -1;
     /*add frame border-image:url(); */
+
+}
+.cardEx {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 16px;
+    margin-top: -20px;
+}
+
+.cardEx figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.cardEx img {
+
+    width: 100%;
+    
+}
+
+.cardEx figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.storie-left {
+
+    grid-column: 1 / 5;
+   
+}
+.storie-middle{
+    grid-column: 5 / 9;
+    
+}
+
+.storie-right {
+    grid-column:  9/ 13;
+    /*margin-right: 5%;*/
+    
+}
+.storie-left h2 {
+    text-align: left;
+    font-size: 35px;
+    color: #bedad9;
+    font-weight: 400;
+}
+.storie-middle h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #ffe11b;
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+.storie-middle img {
+    margin-top: -50px;
+    
+}
+.storie-right p {
+    text-align: right;
+    font-size: 20px;
+    color: #bedad9;
+    font-weight: 400;
+    
+}
+
+.storie-right h2 {
+    text-align: right;
+    font-size: 35px;
+    color: #bedad9;
+    font-weight: 400;
 
 }
 
